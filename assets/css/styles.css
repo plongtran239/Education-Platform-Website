@@ -81,6 +81,10 @@ a {
     --line-clamp: 2;
 }
 
+.line-clamp.line-4 {
+    --line-clamp: 4;
+}
+
 .break-all {
     word-break: break-all;
 }
@@ -402,4 +406,78 @@ a {
 .course-item .book-course-btn:hover {
     color: #fff;
     background: var(--primary-color);
+}
+
+/* ===== Feedback ===== */
+.feedback {
+    margin-top: 135px;
+    background: #2E2100;
+    padding: 96px 0;
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback .feedback-item {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .title {
+    margin-top: 18px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #F7F7F7;
+}
+
+.feedback-item .desc {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB3;
+}
+
+.feedback-item .dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 28px;
+}
+
+.feedback-item .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active {
+    background: #FFB900;
+    cursor: default;
+}
+
+.feedback-item .content {
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback-item blockquote {
+    margin-left: 30px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #FFFFFF;
 }
